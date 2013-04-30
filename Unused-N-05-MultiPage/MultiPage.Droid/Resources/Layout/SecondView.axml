@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res/MultiPage.Droid"
+    android:orientation="vertical"
+    android:background="#ff0000"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Second"
+    android:textSize="40dp"
+    />
+
+</LinearLayout>

@@ -13,7 +13,7 @@
     <Page.Resources>
 
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-        <x:String x:Key="AppName">Second View</x:String>
+        <x:String x:Key="AppName">My Application</x:String>
     </Page.Resources>
 
     <!--
@@ -21,7 +21,9 @@
         * Row 0 contains the back button and page title
         * Row 1 contains the rest of the page layout
     -->
-    <Grid Style="{StaticResource LayoutRootStyle}" Background="Red">
+    <Grid Style="{StaticResource LayoutRootStyle}"
+          Background="DarkRed"
+          >
         <Grid.RowDefinitions>
             <RowDefinition Height="140"/>
             <RowDefinition Height="*"/>
@@ -34,7 +36,17 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button x:Name="backButton" Click="GoBack" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
-            <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{StaticResource AppName}" Style="{StaticResource PageHeaderTextStyle}"/>
+            <TextBlock x:Name="pageTitle" Grid.Column="1" Text="Second page" Style="{StaticResource PageHeaderTextStyle}"/>
+        </Grid>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+
+                <TextBlock FontSize="64" Text="{Binding Name}"></TextBlock>
+                <Button FontSize="64"
+                        Content="Go Third"
+                        Command="{Binding GoThirdCommand}"
+                        ></Button>
+            </StackPanel>
         </Grid>
 
         <VisualStateManager.VisualStateGroups>

@@ -12,7 +12,7 @@ namespace MultiPage.Store
 
         protected override IMvxApplication CreateApp()
         {
-            return new MultiPage.Core.App();
+            return new Core.App();
         }
     }
 }

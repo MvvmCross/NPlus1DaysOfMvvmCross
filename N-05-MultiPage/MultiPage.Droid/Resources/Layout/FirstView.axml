@@ -1,37 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:local="http://schemas.android.com/apk/res/MultiPage.Droid"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-  <EditText
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:textSize="40dp"
-    local:MvxBind="Text Name"
-    />
-  <SeekBar
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    local:MvxBind="Progress Age"
-    />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        local:MvxBind="Text Hello" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        local:MvxBind="Text Hello" />
+    <Button
+        android:text="Click Me"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Click MyCommand" />
   <Button
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Go Simple"
-    local:MvxBind="Click GoCommand"
-    />
-  <Button
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Go Anonymous"
-    local:MvxBind="Click GoWithParametersCommand"
-    />
-  <Button
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Go Navigation"
-    local:MvxBind="Click WithNavigationCommand"
-    />
-
+      android:text="Go to Second"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="Click GoSecondCommand" />
 </LinearLayout>

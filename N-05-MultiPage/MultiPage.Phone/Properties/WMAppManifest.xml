@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{b90210c1-2967-430e-817a-cf3e48920cac}" Title="MultiPage.Phone" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="MultiPage.Phone author" Description="Sample description" Publisher="MultiPage.Phone">
+  <App xmlns="" ProductID="{0360f7b3-9788-4721-973c-baa5007a4965}" Title="MultiPage.Phone" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="MultiPage.Phone author" Description="Sample description" Publisher="MultiPage.Phone">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES"/>

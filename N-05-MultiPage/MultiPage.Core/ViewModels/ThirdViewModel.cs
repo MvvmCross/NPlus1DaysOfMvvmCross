@@ -1,28 +1,20 @@
-using Cirrious.MvvmCross.ViewModels;
+﻿using Cirrious.MvvmCross.ViewModels;
 
 namespace MultiPage.Core.ViewModels
 {
     public class ThirdViewModel
-        : MvxViewModel
+        :MvxViewModel
     {
-        public void Init(string name, int age)
+        public void Init(string question)
         {
-            Name = name;
-            Age = age;
+            TheAnswer = "I don't know " + question;
         }
 
-        private string _name;
-        public string Name
+        private string _theAnswer;
+        public string TheAnswer
         {
-            get { return _name; }
-            set { _name = value; RaisePropertyChanged(() => Name); }
+            get { return _theAnswer; }
+            set { _theAnswer = value; RaisePropertyChanged(() => TheAnswer); }
         }
-
-        private int _age;
-        public int Age
-        {
-            get { return _age; }
-            set { _age = value; RaisePropertyChanged(() => Age); }
-        }        
     }
 }

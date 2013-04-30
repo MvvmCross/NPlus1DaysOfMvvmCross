@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res/MultiPage.Droid"
+    android:orientation="vertical"
+     android:background="#004000"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="40dp"
+android:text="Third"
+    />
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="40dp"
+    local:MvxBind="Text Name"
+    />
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="40dp"
+    local:MvxBind="Text Age"
+    />
+</LinearLayout>

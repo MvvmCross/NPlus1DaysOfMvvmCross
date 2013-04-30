@@ -21,7 +21,8 @@
         * Row 0 contains the back button and page title
         * Row 1 contains the rest of the page layout
     -->
-    <Grid Style="{StaticResource LayoutRootStyle}" Background="DarkGreen">
+    <Grid Style="{StaticResource LayoutRootStyle}"
+          Background="DarkCyan">
         <Grid.RowDefinitions>
             <RowDefinition Height="140"/>
             <RowDefinition Height="*"/>
@@ -36,15 +37,11 @@
             <Button x:Name="backButton" Click="GoBack" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
             <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{StaticResource AppName}" Style="{StaticResource PageHeaderTextStyle}"/>
         </Grid>
-
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <StackPanel>
-                <TextBlock Text="{Binding Name}" FontSize="64"></TextBlock>
-                <TextBlock Text="{Binding Age}" FontSize="64"></TextBlock>
-            </StackPanel>
+            <TextBlock TextWrapping="Wrap"
+                       FontSize="64"
+           Text="{Binding TheAnswer}"></TextBlock>
         </Grid>
-
-
         <VisualStateManager.VisualStateGroups>
 
             <!-- Visual states reflect the application's view state -->

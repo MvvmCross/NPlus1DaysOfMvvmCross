@@ -15,7 +15,7 @@ namespace MultiPage.Touch
 
 		protected override Cirrious.MvvmCross.ViewModels.IMvxApplication CreateApp ()
 		{
-            return new MultiPage.Core.App();
+			return new Core.App();
 		}
 	}
 }

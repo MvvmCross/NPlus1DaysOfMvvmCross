@@ -1,4 +1,4 @@
-﻿<views:MvxPhonePage
+<views:MvxPhonePage
     x:Class="MultiPage.Phone.Views.FirstView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -22,31 +22,18 @@
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="First View" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <StackPanel>
-                <TextBox Height="72" TextWrapping="Wrap" 
-                         Text="{Binding Name,Mode=TwoWay}"
-                         />
-                <Slider
-                    Value="{Binding Age,Mode=TwoWay}"
-                    Maximum="100"
-                    />
-                <Button Content="Go Simple"
-                        Command="{Binding GoCommand}"
-                        />
-                <Button Content="Go With Anonymous"
-                        Command="{Binding GoWithParametersCommand}"
-                        />
-                <Button Content="Go with Nested Class"
-                        Command="{Binding WithNavigationCommand}"
-                        />
-
+		   <StackPanel>
+			    <TextBox Text="{Binding Hello, Mode=TwoWay}" />
+			    <TextBlock Text="{Binding Hello}" />
+                <Button Content="Click Me" Command="{Binding MyCommand}"/>
+                <Button Content="Go Second" Command="{Binding GoSecondCommand}"/>
             </StackPanel>
         </Grid>
     </Grid>

@@ -1,8 +1,8 @@
-using System;
+using System.Drawing;
+using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Touch.Views;
-using MonoTouch.CoreFoundation;
-using MonoTouch.UIKit;
 using MonoTouch.Foundation;
+using MonoTouch.UIKit;
 
 namespace MultiPage.Touch.Views
 {
@@ -11,13 +11,20 @@ namespace MultiPage.Touch.Views
     {
         public override void ViewDidLoad()
         {
-            View = new UniversalView();
-            View.BackgroundColor = UIColor.Red;
-
+            View = new UIView() { BackgroundColor = UIColor.Red };
             base.ViewDidLoad();
 
-            // Perform any additional setup after loading the view
-            Title = "Second";
+            var label = new UILabel(new RectangleF(10, 10, 300, 40));
+            Add(label);
+            var button = new UIButton(UIButtonType.RoundedRect);
+            button.SetTitle("Go Third", UIControlState.Normal);
+            button.Frame = new RectangleF(10, 50, 300, 40);
+            Add(button);
+
+            var set = this.CreateBindingSet<SecondView, Core.ViewModels.SecondViewModel>();
+            set.Bind(label).To(vm => vm.Name);
+            set.Bind(button).To(vm => vm.GoThirdCommand);
+            set.Apply();
         }
     }
 }
