@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Mvx.MvxImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        local:MvxBind="ImageUrl volumeInfo.imageLinks.smallThumbnail"
+        android:layout_margin="5dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:text="Title here"
+            local:MvxBind="Text volumeInfo.title"
+            android:layout_margin="10dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Author here"
+            android:textSize="24dp"
+            local:MvxBind="Text volumeInfo.authorSummary"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+</LinearLayout>
