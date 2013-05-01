@@ -20,8 +20,19 @@ namespace Books.Touch.Views
 
             var tableView = new UITableView(new RectangleF(0, 50, 320, 500), UITableViewStyle.Plain);
             Add(tableView);
-            var source = new MvxStandardTableViewSource(tableView, "TitleText");
-            tableView.Source = source;
+
+			// choice here:
+			//
+			//   for original demo use:
+            //     var source = new MvxStandardTableViewSource(tableView, "TitleText");
+			//
+			//   or for prettier cells from XIB file use:
+			//     tableView.RowHeight = 88;
+			//     var source = new MvxSimpleTableViewSource(tableView, BookCell.Key, BookCell.Key);
+
+			tableView.RowHeight = 88;
+			var source = new MvxSimpleTableViewSource(tableView, BookCell.Key, BookCell.Key);
+			tableView.Source = source;
 
             var set = this.CreateBindingSet<FirstView, Core.ViewModels.FirstViewModel>();
             set.Bind(textField).To(vm => vm.SearchTerm);
