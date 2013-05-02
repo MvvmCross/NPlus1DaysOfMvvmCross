@@ -1,0 +1,167 @@
+﻿<ViewModels:FirstViewModel xmlns:ViewModels="clr-namespace:Books.Core.ViewModels;assembly=Books.Core" xmlns:Services="clr-namespace:Books.Core.Services;assembly=Books.Core" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:ViewModels1="clr-namespace:Cirrious.MvvmCross.ViewModels;assembly=Cirrious.MvvmCross" SearchTerm="Vestibulum semper morbi lobortis">
+	<ViewModels:FirstViewModel.Results>
+		<Services:BookSearchItem id="Class aenean vestibulum" kind="Nam adipiscing curae">
+			<Services:BookSearchItem.volumeInfo>
+				<Services:VolumeInfo authorSummary="Aaberg, Jesper" averageRating="378.37" canonicalVolumeLink="Maecenas est" descrption="Dignissim lorem elementum praesent accumsan" infoLink="Arcu vivamus dictumst diam" language="Fermentum eleifend facilisi dictum lectus" publishedDate="Libero leo mus" publisher="Habitasse hendrerit faucibus parturient himenaeos" previewLink="Aliquam fringilla" pageCount="33" ratingsCount="87" title="A. Datum Corporation">
+					<Services:VolumeInfo.authors>
+						<System:String>Phasellus integer</System:String>
+						<System:String>Parturient duis donec consequat sed</System:String>
+						<System:String>Aptent auctor etiam</System:String>
+						<System:String>Nunc congue dis amet</System:String>
+						<System:String>Ante fusce convallis</System:String>
+					</Services:VolumeInfo.authors>
+					<Services:VolumeInfo.imageLinks>
+						<Services:ImageLinks smallThumbnail="http://placekitten.com/301/301" thumbnail="http://placekitten.com/301/301"/>
+					</Services:VolumeInfo.imageLinks>
+				</Services:VolumeInfo>
+			</Services:BookSearchItem.volumeInfo>
+		</Services:BookSearchItem>
+		<Services:BookSearchItem id="Nec elit non" kind="Malesuada morbi nulla">
+			<Services:BookSearchItem.volumeInfo>
+				<Services:VolumeInfo authorSummary="Adams, Ellen" averageRating="501.58" canonicalVolumeLink="Commodo dolor penatibus" descrption="Vestibulum eros lobortis porttitor nascetur" infoLink="Nisl litora pulvinar fames conubia" language="Luctus adipiscing sagittis" publishedDate="Parturient felis ipsum senectus" publisher="Cubilia sociosqu suscipit dapibus" previewLink="Vel tristique ultricies nam venenatis" pageCount="58" ratingsCount="71" title="Adventure Works">
+					<Services:VolumeInfo.authors>
+						<System:String>Interdum vestibulum</System:String>
+						<System:String>Augue enim erat</System:String>
+						<System:String>Aliquet blandit</System:String>
+						<System:String>Per ligula</System:String>
+						<System:String>Sed sem</System:String>
+					</Services:VolumeInfo.authors>
+					<Services:VolumeInfo.imageLinks>
+						<Services:ImageLinks smallThumbnail="http://placekitten.com/302/302" thumbnail="http://placekitten.com/302/302"/>
+					</Services:VolumeInfo.imageLinks>
+				</Services:VolumeInfo>
+			</Services:BookSearchItem.volumeInfo>
+		</Services:BookSearchItem>
+		<Services:BookSearchItem id="Magnis vestibulum mattis nunc" kind="Vestibulum odio">
+			<Services:BookSearchItem.volumeInfo>
+				<Services:VolumeInfo authorSummary="Adams, Terry" averageRating="947.53" canonicalVolumeLink="Nec praesent accumsan adipiscing" descrption="Parturient vestibulum lacus vestibulum" infoLink="Vestibulum dictumst vestibulum egestas" language="Eleifend rutrum sapien adipiscing" publishedDate="Feugiat gravida facilisi" publisher="Dignissim cras faucibus duis" previewLink="Semper convallis euismod" pageCount="13" ratingsCount="57" title="Adventure Works">
+					<Services:VolumeInfo.authors>
+						<System:String>Volutpat vulputate maecenas hac</System:String>
+						<System:String>Curabitur pede parturient</System:String>
+						<System:String>Leo quam phasellus vestibulum mollis</System:String>
+						<System:String>Vestibulum montes quis mus nostra</System:String>
+						<System:String>Urna ornare</System:String>
+					</Services:VolumeInfo.authors>
+					<Services:VolumeInfo.imageLinks>
+						<Services:ImageLinks smallThumbnail="http://placekitten.com/303/303" thumbnail="http://placekitten.com/303/303"/>
+					</Services:VolumeInfo.imageLinks>
+				</Services:VolumeInfo>
+			</Services:BookSearchItem.volumeInfo>
+		</Services:BookSearchItem>
+		<Services:BookSearchItem id="Elementum per lacinia" kind="Magna sed">
+			<Services:BookSearchItem.volumeInfo>
+				<Services:VolumeInfo authorSummary="Adams, Terry" averageRating="196.9" canonicalVolumeLink="Elit fermentum fringilla enim tortor" descrption="Erat eros" infoLink="Aenean mauris" language="Nam nisi netus sed interdum" publishedDate="Rhoncus habitasse hendrerit" publisher="Nulla pharetra himenaeos nunc" previewLink="Lobortis nascetur nisl" pageCount="69" ratingsCount="53" title="Alpine Ski House">
+					<Services:VolumeInfo.authors>
+						<System:String>Metus sem sit laoreet natoque</System:String>
+						<System:String>Taciti amet vestibulum posuere adipiscing</System:String>
+						<System:String>Habitant inceptos ante vel</System:String>
+						<System:String>Tellus tempor facilisis arcu diam</System:String>
+						<System:String>Potenti morbi neque eget tempus</System:String>
+					</Services:VolumeInfo.authors>
+					<Services:VolumeInfo.imageLinks>
+						<Services:ImageLinks smallThumbnail="http://placekitten.com/304/304" thumbnail="http://placekitten.com/304/304"/>
+					</Services:VolumeInfo.imageLinks>
+				</Services:VolumeInfo>
+			</Services:BookSearchItem.volumeInfo>
+		</Services:BookSearchItem>
+		<Services:BookSearchItem id="Malesuada placerat porta" kind="Penatibus sodales vestibulum nullam">
+			<Services:BookSearchItem.volumeInfo>
+				<Services:VolumeInfo authorSummary="Penor, Lori" averageRating="950.19" canonicalVolumeLink="Venenatis auctor" descrption="Vestibulum aliquam aliquet" infoLink="Sagittis cursus vulputate mus" language="Velit vitae adipiscing" publishedDate="Senectus nec quis non libero" publisher="Ligula litora" previewLink="Parturient dictum curabitur quam lectus" pageCount="95" ratingsCount="21" title="Baldwin Museum of Science">
+					<Services:VolumeInfo.authors>
+						<System:String>Viverra adipiscing hac</System:String>
+						<System:String>Tincidunt parturient</System:String>
+						<System:String>Tristique aptent</System:String>
+						<System:String>Aliquam integer quisque orci</System:String>
+						<System:String>Vivamus vestibulum leo ultricies</System:String>
+					</Services:VolumeInfo.authors>
+					<Services:VolumeInfo.imageLinks>
+						<Services:ImageLinks smallThumbnail="http://placekitten.com/305/305" thumbnail="http://placekitten.com/305/305"/>
+					</Services:VolumeInfo.imageLinks>
+				</Services:VolumeInfo>
+			</Services:BookSearchItem.volumeInfo>
+		</Services:BookSearchItem>
+		<Services:BookSearchItem id="Luctus urna suscipit vestibulum consequat" kind="Torquent conubia convallis cras">
+			<Services:BookSearchItem.volumeInfo>
+				<Services:VolumeInfo authorSummary="Pfeiffer, Michael" averageRating="352.2" canonicalVolumeLink="Elementum adipiscing" descrption="Morbi sem parturient" infoLink="Fermentum vestibulum vestibulum sit" language="Augue adipiscing feugiat" publishedDate="Montes nostra gravida iaculis" publisher="Fringilla ornare" previewLink="Vel nam eget elit ultrices" pageCount="97" ratingsCount="28" title="Blue Yonder Airlines">
+					<Services:VolumeInfo.authors>
+						<System:String>Per cubilia</System:String>
+						<System:String>Sed magnis etiam fusce</System:String>
+						<System:String>Dapibus duis nunc amet</System:String>
+						<System:String>Vestibulum mattis</System:String>
+						<System:String>Ante lorem dignissim mauris arcu</System:String>
+					</Services:VolumeInfo.authors>
+					<Services:VolumeInfo.imageLinks>
+						<Services:ImageLinks smallThumbnail="http://placekitten.com/306/306" thumbnail="http://placekitten.com/306/306"/>
+					</Services:VolumeInfo.imageLinks>
+				</Services:VolumeInfo>
+			</Services:BookSearchItem.volumeInfo>
+		</Services:BookSearchItem>
+		<Services:BookSearchItem id="Dolor dis fames erat vestibulum" kind="Vehicula laoreet">
+			<Services:BookSearchItem.volumeInfo>
+				<Services:VolumeInfo authorSummary="Philips, Carol" averageRating="599.95" canonicalVolumeLink="Nec ipsum vestibulum dictumst" descrption="Vestibulum non eleifend posuere" infoLink="Facilisi tellus rhoncus" language="Nunc himenaeos" publishedDate="Tempor aliquam faucibus adipiscing" publisher="Sed integer quisque" previewLink="Imperdiet magna sodales viverra" pageCount="21" ratingsCount="96" title="City Power &amp; Light">
+					<Services:VolumeInfo.authors>
+						<System:String>Eros adipiscing felis parturient sapien</System:String>
+						<System:String>Nibh semper est</System:String>
+						<System:String>Natoque maecenas praesent</System:String>
+						<System:String>Accumsan sociis hac bibendum</System:String>
+						<System:String>Leo mus hendrerit nisi</System:String>
+					</Services:VolumeInfo.authors>
+					<Services:VolumeInfo.imageLinks>
+						<Services:ImageLinks smallThumbnail="http://placekitten.com/307/307" thumbnail="http://placekitten.com/307/307"/>
+					</Services:VolumeInfo.imageLinks>
+				</Services:VolumeInfo>
+			</Services:BookSearchItem.volumeInfo>
+		</Services:BookSearchItem>
+		<Services:BookSearchItem id="Orci morbi vestibulum" kind="Habitant vivamus">
+			<Services:BookSearchItem.volumeInfo>
+				<Services:VolumeInfo authorSummary="Poe, Toni" averageRating="537.37" canonicalVolumeLink="Quis blandit varius vel nascetur" descrption="Porta malesuada nam purus" infoLink="Pulvinar sagittis" language="Commodo duis dis nullam risus" publishedDate="Est hac aptent vestibulum conubia" publisher="Amet adipiscing" previewLink="Nunc vestibulum" pageCount="80" ratingsCount="11" title="Coho Vineyard">
+					<Services:VolumeInfo.authors>
+						<System:String>Quam tortor</System:String>
+						<System:String>Interdum sit</System:String>
+						<System:String>Aliquam aliquet lobortis</System:String>
+						<System:String>Netus nulla</System:String>
+						<System:String>Adipiscing turpis</System:String>
+					</Services:VolumeInfo.authors>
+					<Services:VolumeInfo.imageLinks>
+						<Services:ImageLinks smallThumbnail="http://placekitten.com/308/308" thumbnail="http://placekitten.com/308/308"/>
+					</Services:VolumeInfo.imageLinks>
+				</Services:VolumeInfo>
+			</Services:BookSearchItem.volumeInfo>
+		</Services:BookSearchItem>
+		<Services:BookSearchItem id="Auctor senectus parturient tincidunt vestibulum" kind="Vestibulum mus congue cubilia dapibus">
+			<Services:BookSearchItem.volumeInfo>
+				<Services:VolumeInfo authorSummary="Hicks, Cassie" averageRating="274.76" canonicalVolumeLink="Non per" descrption="Ultrices sed class" infoLink="Euismod arcu feugiat vestibulum" language="Volutpat gravida diam maecenas eget" publishedDate="Enim erat iaculis vestibulum ligula" publisher="Litora sit vestibulum" previewLink="Elit convallis adipiscing parturient sem" pageCount="95" ratingsCount="88" title="Coho Winery">
+					<Services:VolumeInfo.authors>
+						<System:String>Tristique velit nec torquent vitae</System:String>
+						<System:String>Ultricies adipiscing egestas</System:String>
+						<System:String>Parturient venenatis</System:String>
+						<System:String>Dictum lectus</System:String>
+						<System:String>Vulputate vestibulum curabitur</System:String>
+					</Services:VolumeInfo.authors>
+					<Services:VolumeInfo.imageLinks>
+						<Services:ImageLinks smallThumbnail="http://placekitten.com/309/309" thumbnail="http://placekitten.com/309/309"/>
+					</Services:VolumeInfo.imageLinks>
+				</Services:VolumeInfo>
+			</Services:BookSearchItem.volumeInfo>
+		</Services:BookSearchItem>
+		<Services:BookSearchItem id="Mattis vel laoreet natoque dignissim" kind="Elementum posuere donec facilisis">
+			<Services:BookSearchItem.volumeInfo>
+				<Services:VolumeInfo authorSummary="Argentiero, Luca" averageRating="875.1" canonicalVolumeLink="Vestibulum himenaeos dictumst eleifend" descrption="Facilisi est pede etiam faucibus" infoLink="Ornare urna platea" language="Cras rhoncus lorem" publishedDate="Vestibulum inceptos penatibus" publisher="Interdum sodales duis hac rutrum" previewLink="Imperdiet parturient habitant malesuada primis" pageCount="39" ratingsCount="64" title="Coho Vineyard &amp; Winery">
+					<Services:VolumeInfo.authors>
+						<System:String>Nisi fermentum praesent</System:String>
+						<System:String>Nisl sed fringilla dis nunc</System:String>
+						<System:String>Odio accumsan habitasse</System:String>
+						<System:String>Adipiscing mauris bibendum</System:String>
+						<System:String>Potenti parturient orci mollis hendrerit</System:String>
+					</Services:VolumeInfo.authors>
+					<Services:VolumeInfo.imageLinks>
+						<Services:ImageLinks smallThumbnail="http://placekitten.com/310/310" thumbnail="http://placekitten.com/310/310"/>
+					</Services:VolumeInfo.imageLinks>
+				</Services:VolumeInfo>
+			</Services:BookSearchItem.volumeInfo>
+		</Services:BookSearchItem>
+	</ViewModels:FirstViewModel.Results>
+	<ViewModels:FirstViewModel.RequestedBy>
+		<ViewModels1:MvxRequestedBy AdditionalInfo="Porttitor nec adipiscing sociis" Type="Unknown"/>
+	</ViewModels:FirstViewModel.RequestedBy>
+</ViewModels:FirstViewModel>
