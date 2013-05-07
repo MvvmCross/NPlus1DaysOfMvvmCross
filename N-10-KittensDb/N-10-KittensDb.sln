@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KittensDb.Core", "KittensDb.Core\KittensDb.Core.csproj", "{3DF94780-E7E9-41B0-8236-20665376140D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KittensDb.Droid", "KittensDb.Droid\KittensDb.Droid.csproj", "{4735818E-EA0E-4EC0-AE3E-11A95C54576E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KittensDb.Phone", "KittensDb.Phone\KittensDb.Phone.csproj", "{335628B9-848C-47B5-BC30-FD62AA29E003}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DF94780-E7E9-41B0-8236-20665376140D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DF94780-E7E9-41B0-8236-20665376140D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DF94780-E7E9-41B0-8236-20665376140D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DF94780-E7E9-41B0-8236-20665376140D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4735818E-EA0E-4EC0-AE3E-11A95C54576E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4735818E-EA0E-4EC0-AE3E-11A95C54576E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4735818E-EA0E-4EC0-AE3E-11A95C54576E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4735818E-EA0E-4EC0-AE3E-11A95C54576E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4735818E-EA0E-4EC0-AE3E-11A95C54576E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4735818E-EA0E-4EC0-AE3E-11A95C54576E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{335628B9-848C-47B5-BC30-FD62AA29E003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335628B9-848C-47B5-BC30-FD62AA29E003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335628B9-848C-47B5-BC30-FD62AA29E003}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{335628B9-848C-47B5-BC30-FD62AA29E003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335628B9-848C-47B5-BC30-FD62AA29E003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335628B9-848C-47B5-BC30-FD62AA29E003}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

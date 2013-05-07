@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Mvx.MvxImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        local:MvxBind="ImageUrl ImageUrl" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="Name"
+        local:MvxBind="Text Name"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp" />
+</LinearLayout>
