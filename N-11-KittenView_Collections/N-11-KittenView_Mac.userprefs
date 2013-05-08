@@ -1,0 +1,42 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.6.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="KittenView.Touch/Views/FirstView.cs">
+    <Files>
+      <File FileName="KittenView.Touch/Views/KittenCell.cs" Line="1" Column="1" />
+      <File FileName="KittenView.Touch/Views/FirstView.cs" Line="25" Column="4" />
+      <File FileName="KittenView.Touch/Views/KittenCell.designer.cs" Line="1" Column="1" />
+      <File FileName="KittenView.Touch/Views/KittenCollectionCell.cs" Line="21" Column="72" />
+      <File FileName="KittenView.Touch/Views/KittenCollectionCell.designer.cs" Line="21" Column="40" />
+      <File FileName="KittenView.Touch/AppDelegate.cs" Line="26" Column="1" />
+      <File FileName="KittenView.Touch/Views/Flow.cs" Line="13" Column="41" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="KittenView.Touch" expanded="True" selected="True">
+            <Node name="Views" expanded="True">
+              <Node name="KittenCollectionCell.cs" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>_imageHelper._imageUrl</Value>
+          <Value>messageSubscriptions</Value>
+          <Value>_subscriptions</Value>
+        </State>
+      </Pad>
+      <Pad Id="ConnectionManagerPad">
+        <State selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
