@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectABull.Core", "CollectABull.Core\CollectABull.Core.csproj", "{5E99149B-09FA-47CB-9D1F-4F15EDE62CEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectABull.Phone", "CollectABull.Phone\CollectABull.Phone.csproj", "{305F3403-25CA-40DB-820C-EA0CF787E01F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectABull.Droid", "CollectABull.Droid\CollectABull.Droid.csproj", "{E4260A41-4131-4036-912F-3B53933FF3A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E99149B-09FA-47CB-9D1F-4F15EDE62CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E99149B-09FA-47CB-9D1F-4F15EDE62CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E99149B-09FA-47CB-9D1F-4F15EDE62CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E99149B-09FA-47CB-9D1F-4F15EDE62CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{305F3403-25CA-40DB-820C-EA0CF787E01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{305F3403-25CA-40DB-820C-EA0CF787E01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{305F3403-25CA-40DB-820C-EA0CF787E01F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{305F3403-25CA-40DB-820C-EA0CF787E01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{305F3403-25CA-40DB-820C-EA0CF787E01F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{305F3403-25CA-40DB-820C-EA0CF787E01F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E4260A41-4131-4036-912F-3B53933FF3A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4260A41-4131-4036-912F-3B53933FF3A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4260A41-4131-4036-912F-3B53933FF3A0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E4260A41-4131-4036-912F-3B53933FF3A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4260A41-4131-4036-912F-3B53933FF3A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4260A41-4131-4036-912F-3B53933FF3A0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
