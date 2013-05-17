@@ -87,15 +87,27 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
+    <Compile Include="Views\HomeView.cs" />
+    <Compile Include="Views\HomeView.designer.cs">
+      <DependentUpon>HomeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddView.cs" />
+    <Compile Include="Views\AddView.designer.cs">
+      <DependentUpon>AddView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DetailView.cs" />
+    <Compile Include="Views\DetailView.designer.cs">
+      <DependentUpon>DetailView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default.png" />
-    <BundleResource Include="Resources\Default@2x.png" />
-    <BundleResource Include="Resources\Default-568h@2x.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CollectABull.Core\CollectABull.Core.csproj">
-      <Project>{5e99149b-09fa-47cb-9d1f-4f15ede62ceb}</Project>
+      <Project>{5E99149B-09FA-47CB-9D1F-4F15EDE62CEB}</Project>
       <Name>CollectABull.Core</Name>
     </ProjectReference>
   </ItemGroup>
@@ -155,10 +167,6 @@
       <HintPath>..\packages\MvvmCross.HotTuna.StarterPack.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Touch.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Net, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\MvvmCross.PortableSupport.3.0.6\lib\MonoTouch40\System.Net.dll</HintPath>
-    </Reference>
     <Reference Include="System.Windows">
       <HintPath>..\packages\MvvmCross.PortableSupport.3.0.6\lib\MonoTouch40\System.Windows.dll</HintPath>
     </Reference>
@@ -168,10 +176,18 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>..\packages\MvvmCross.PortableSupport.3.0.6\lib\MonoTouch40\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net">
+      <HintPath>..\packages\MvvmCross.PortableSupport.3.0.6\lib\MonoTouch40\System.Net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AppDelegate.cs.txt" />
     <Content Include="ToDo-MvvmCross\_ Touch UI.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <InterfaceDefinition Include="Views\HomeView.xib" />
+    <InterfaceDefinition Include="Views\AddView.xib" />
+    <InterfaceDefinition Include="Views\DetailView.xib" />
+  </ItemGroup>
 </Project>

@@ -25,7 +25,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -97,10 +96,6 @@
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\MvvmCross.PortableSupport.3.0.6\lib\MonoAndroid16\System.Net.dll</HintPath>
-    </Reference>
     <Reference Include="System.Windows">
       <HintPath>..\packages\MvvmCross.PortableSupport.3.0.6\lib\MonoAndroid16\System.Windows.dll</HintPath>
     </Reference>
@@ -108,6 +103,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Serialization">
       <HintPath>..\packages\MvvmCross.PortableSupport.3.0.6\lib\MonoAndroid16\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>..\packages\MvvmCross.PortableSupport.3.0.6\lib\MonoAndroid16\System.Net.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -145,7 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CollectABull.Core\CollectABull.Core.csproj">
-      <Project>{5e99149b-09fa-47cb-9d1f-4f15ede62ceb}</Project>
+      <Project>{5E99149B-09FA-47CB-9D1F-4F15EDE62CEB}</Project>
       <Name>CollectABull.Core</Name>
     </ProjectReference>
   </ItemGroup>
