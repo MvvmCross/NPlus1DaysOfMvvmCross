@@ -30,7 +30,7 @@
         android:textSize="30dp"
         android:text="Add Picture"
         local:MvxBind="Click AddPictureCommand" />
-    <Mvx.MvxImageView
+  <Mvx.MvxImageView
         android:layout_width="40dp"
         android:layout_height="40dp"
         local:MvxBind="Bitmap PictureBytes,Converter=InMemoryImage" />
