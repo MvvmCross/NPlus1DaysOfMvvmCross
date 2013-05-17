@@ -17,5 +17,15 @@ namespace CollectABull.Touch
 		{
 			return new Core.App();
 		}
+
+        protected override System.Collections.Generic.List<System.Reflection.Assembly> ValueConverterAssemblies
+        {
+            get
+            {
+                var toReturn = base.ValueConverterAssemblies;
+                toReturn.Add(typeof(Cirrious.MvvmCross.Plugins.PictureChooser.Touch.MvxInMemoryImageValueConverter).Assembly);
+                return toReturn;
+            }
+        }
 	}
 }

@@ -1,7 +1,9 @@
 
 using System;
 using System.Drawing;
-
+using Cirrious.MvvmCross.Binding.BindingContext;
+using Cirrious.MvvmCross.Binding.Touch.Views;
+using CollectABull.Core.ViewModels;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using Cirrious.MvvmCross.Touch.Views;
@@ -13,21 +15,24 @@ namespace CollectABull.Touch
 		public DetailView () : base ("DetailView", null)
 		{
 		}
-		
-		public override void DidReceiveMemoryWarning ()
-		{
-			// Releases the view if it doesn't have a superview.
-			base.DidReceiveMemoryWarning ();
-			
-			// Release any cached data, images, etc that aren't in use.
-		}
+
+        private MvxImageViewLoader _imageViewLoader;
 		
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			
-			// Perform any additional setup after loading the view, typically from a nib.
-		}
+
+            _imageViewLoader = new MvxImageViewLoader(() => this.MainImageView);
+
+            var set = this.CreateBindingSet<DetailView, DetailViewModel>();
+            set.Bind(CaptionLabel).To(vm => vm.Item.Caption);
+            set.Bind(NoteLabel).To(vm => vm.Item.Notes);
+            set.Bind(LocationLabel).To(vm => vm.Item).WithConversion("ItemLocation");
+            set.Bind(_imageViewLoader).To(vm => vm.Item.ImagePath);
+            set.Bind(DateTimeLabel).To(vm => vm.Item.WhenUtc).WithConversion("TimeAgo");
+            set.Bind(DeleteButton).To(vm => vm.DeleteCommand);
+            set.Apply();
+        }
 	}
 }
 

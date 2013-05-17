@@ -131,7 +131,9 @@
     <AndroidResource Include="Resources\Layout\SplashScreen.axml" />
     <AndroidResource Include="Resources\Layout\HomeView.axml" />
     <AndroidResource Include="Resources\Layout\AddView.axml" />
-    <AndroidResource Include="Resources\Layout\DetailView.axml" />
+    <AndroidResource Include="Resources\Layout\DetailView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\Layout\ListView.axml" />
     <AndroidResource Include="Resources\Layout\List_CollectedItem.axml" />
   </ItemGroup>
