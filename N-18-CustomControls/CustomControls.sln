@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControls.Core", "CustomControls.Core\CustomControls.Core.csproj", "{D6EEC8ED-CD9F-4B4F-8F5D-0D53A7D19AD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControls.Droid", "CustomControls.Droid\CustomControls.Droid.csproj", "{08D8C962-4582-4693-AA9A-3D52B1873CE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6EEC8ED-CD9F-4B4F-8F5D-0D53A7D19AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6EEC8ED-CD9F-4B4F-8F5D-0D53A7D19AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6EEC8ED-CD9F-4B4F-8F5D-0D53A7D19AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6EEC8ED-CD9F-4B4F-8F5D-0D53A7D19AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08D8C962-4582-4693-AA9A-3D52B1873CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08D8C962-4582-4693-AA9A-3D52B1873CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08D8C962-4582-4693-AA9A-3D52B1873CE1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{08D8C962-4582-4693-AA9A-3D52B1873CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08D8C962-4582-4693-AA9A-3D52B1873CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08D8C962-4582-4693-AA9A-3D52B1873CE1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
