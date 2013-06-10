@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <fragment 
+    class="Rock.Droid.Views.SubFrag"
+    android:id="@+id/sub1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />
+  <fragment
+    class="Rock.Droid.Views.DubFrag"
+    android:id="@+id/dub1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />
+  <MvxFrameControl
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    local:MvxBind="DataContext Sub"
+    local:MvxTemplate="@layout/nonfragframecontent"
+    />
+
+</LinearLayout>

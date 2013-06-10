@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rock.Core", "Rock.Core\Rock.Core.csproj", "{B840C3F4-6814-4144-B035-2CC8D803F8AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rock.Droid", "Rock.Droid\Rock.Droid.csproj", "{94B1269E-679A-455D-A681-CCBA3367397A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B840C3F4-6814-4144-B035-2CC8D803F8AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B840C3F4-6814-4144-B035-2CC8D803F8AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B840C3F4-6814-4144-B035-2CC8D803F8AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B840C3F4-6814-4144-B035-2CC8D803F8AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94B1269E-679A-455D-A681-CCBA3367397A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B1269E-679A-455D-A681-CCBA3367397A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B1269E-679A-455D-A681-CCBA3367397A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{94B1269E-679A-455D-A681-CCBA3367397A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B1269E-679A-455D-A681-CCBA3367397A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94B1269E-679A-455D-A681-CCBA3367397A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
