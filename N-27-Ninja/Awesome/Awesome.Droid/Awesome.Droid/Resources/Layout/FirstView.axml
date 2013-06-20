@@ -13,11 +13,16 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="40dp"
-        local:MvxBind="Text MyProperty, Converter=Length" />
+        local:MvxBind="Text MyProperty" />
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="40dp"
+      local:MvxBind="Text MyProperty, Converter=Length" />
   <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:text="Go"
-        local:MvxBind="Click MyCommand" />
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="40dp"
+      android:text="N27"      
+      local:MvxBind="Click MyCommand" />
 </LinearLayout>

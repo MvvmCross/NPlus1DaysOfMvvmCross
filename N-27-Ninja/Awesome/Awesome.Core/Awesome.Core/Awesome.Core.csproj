@@ -43,8 +43,6 @@
     <Compile Include="App.cs" />
     <Compile Include="Entities\Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\ITypeResolverService.cs" />
-    <Compile Include="Services\TypeResolverService.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\FirstViewModel.cs" />
   </ItemGroup>

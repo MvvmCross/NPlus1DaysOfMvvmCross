@@ -1,21 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.Core", "Awesome.Core.csproj", "{747706F4-ECBF-4D50-8D72-B0DDCC18395C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.Core", "Awesome.Core\Awesome.Core\Awesome.Core.csproj", "{747706F4-ECBF-4D50-8D72-B0DDCC18395C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.Core.Tests", "..\Awesome.Core.Tests\Awesome.Core.Tests.csproj", "{79E792BB-351D-4CC8-B43E-CF8BF02F6F36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.Core.Tests", "Awesome.Core.Tests\Awesome.Core.Tests\Awesome.Core.Tests.csproj", "{79E792BB-351D-4CC8-B43E-CF8BF02F6F36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.Droid", "..\Awesome.Droid\Awesome.Droid.csproj", "{4AF4487D-0C3E-4384-BA68-62CB1680C648}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.Droid", "Awesome.Droid\Awesome.Droid\Awesome.Droid.csproj", "{4AF4487D-0C3E-4384-BA68-62CB1680C648}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.iOS", "..\Awesome.iOS\Awesome.iOS.csproj", "{B061316A-F386-4FE2-93B7-555584234FF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.iOS", "Awesome.iOS\Awesome.iOS\Awesome.iOS.csproj", "{B061316A-F386-4FE2-93B7-555584234FF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.WindowsPhone", "..\Awesome.WindowsPhone\Awesome.WindowsPhone.csproj", "{20C82258-D3E4-429A-AEE9-51DD6317BC90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.WindowsPhone", "Awesome.WindowsPhone\Awesome.WindowsPhone\Awesome.WindowsPhone.csproj", "{20C82258-D3E4-429A-AEE9-51DD6317BC90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.WindowsStore", "..\Awesome.WindowsStore\Awesome.WindowsStore.csproj", "{082250FB-CE17-4377-8254-41920BB87298}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.WindowsStore", "Awesome.WindowsStore\Awesome.WindowsStore\Awesome.WindowsStore.csproj", "{082250FB-CE17-4377-8254-41920BB87298}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.Wpf", "..\Awesome.Wpf\Awesome.Wpf.csproj", "{A6BBD974-B1B1-4113-A6C3-C89848107059}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Awesome.Wpf", "Awesome.Wpf\Awesome.Wpf\Awesome.Wpf.csproj", "{A6BBD974-B1B1-4113-A6C3-C89848107059}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CADE9102-E68D-483E-9D84-71CEC54C777C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D414D5F4-AE70-4BF0-9292-8BF38317DF85}"
 	ProjectSection(SolutionItems) = preProject
 		NinjaReadMe.txt = NinjaReadMe.txt
 	EndProjectSection
@@ -75,6 +75,7 @@ Global
 		{747706F4-ECBF-4D50-8D72-B0DDCC18395C}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{747706F4-ECBF-4D50-8D72-B0DDCC18395C}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{747706F4-ECBF-4D50-8D72-B0DDCC18395C}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{747706F4-ECBF-4D50-8D72-B0DDCC18395C}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{747706F4-ECBF-4D50-8D72-B0DDCC18395C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{747706F4-ECBF-4D50-8D72-B0DDCC18395C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{747706F4-ECBF-4D50-8D72-B0DDCC18395C}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -152,6 +153,7 @@ Global
 		{4AF4487D-0C3E-4384-BA68-62CB1680C648}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{4AF4487D-0C3E-4384-BA68-62CB1680C648}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{4AF4487D-0C3E-4384-BA68-62CB1680C648}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{4AF4487D-0C3E-4384-BA68-62CB1680C648}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{4AF4487D-0C3E-4384-BA68-62CB1680C648}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{4AF4487D-0C3E-4384-BA68-62CB1680C648}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{4AF4487D-0C3E-4384-BA68-62CB1680C648}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU

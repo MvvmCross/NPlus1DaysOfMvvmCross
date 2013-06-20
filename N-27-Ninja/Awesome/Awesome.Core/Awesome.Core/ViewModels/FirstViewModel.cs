@@ -12,16 +12,15 @@ namespace Awesome.Core.ViewModels
 
     using Cirrious.MvvmCross.ViewModels;
 
-
-    public class LengthValueConverter
-        : MvxValueConverter<string, int>
+    public class LengthValueConverter : MvxValueConverter<string, int>
     {
         protected override int Convert(string value, System.Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
+            if (value == null)
+                return 0;
             return value.Length;
         }
     }
-
     /// <summary>
     /// Define the FirstViewModel type.
     /// </summary>
@@ -65,8 +64,7 @@ namespace Awesome.Core.ViewModels
         {
             get
             {
-                this.myCommand = this.myCommand ?? new MvxCommand(() => MyProperty = "Pwned");
-                return this.myCommand;
+                return this.myCommand ?? (this.myCommand = new MvxCommand(() => MyProperty = "N=27"));
             }
         }
     }

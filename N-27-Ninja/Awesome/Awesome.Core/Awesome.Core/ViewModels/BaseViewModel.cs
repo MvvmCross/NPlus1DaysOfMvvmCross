@@ -1,22 +1,23 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <summary>
-//    Defines the TypeResolverService type.
+//    Defines the BaseViewModel type.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-namespace Awesome.Core.Services
+namespace Awesome.Core.ViewModels
 {
     using Cirrious.CrossCore;
+    using Cirrious.MvvmCross.ViewModels;
 
     /// <summary>
-    ///  Defines the TypeResolverService type.
+    ///    Defines the BaseViewModel type.
     /// </summary>
-    public class TypeResolverService : ITypeResolverService
+    public abstract class BaseViewModel : MvxViewModel
     {
         /// <summary>
         /// Gets the service.
         /// </summary>
         /// <typeparam name="TService">The type of the service.</typeparam>
-        /// <returns>An instance of TService.</returns>
+        /// <returns>An instance of the service.</returns>
         public TService GetService<TService>() where TService : class
         {
             return Mvx.Resolve<TService>();

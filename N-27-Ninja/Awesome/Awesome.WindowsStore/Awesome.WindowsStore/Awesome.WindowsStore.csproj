@@ -170,7 +170,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Awesome.Core\Awesome.Core.csproj">
+    <ProjectReference Include="..\..\Awesome.Core\Awesome.Core\Awesome.Core.csproj">
       <Project>{747706F4-ECBF-4D50-8D72-B0DDCC18395C}</Project>
       <Name>Awesome.Core</Name>
     </ProjectReference>
