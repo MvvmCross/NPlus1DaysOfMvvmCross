@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipCalcTest.Core", "TipCalcTest.Core\TipCalcTest.Core.csproj", "{45A20D6C-EEAC-4844-940E-2AA6D8716068}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipCalcTest.Tests", "TipCalcTest.Tests\TipCalcTest.Tests.csproj", "{88B59DDF-3727-49B4-8748-1E2A6E5ADCA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45A20D6C-EEAC-4844-940E-2AA6D8716068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A20D6C-EEAC-4844-940E-2AA6D8716068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A20D6C-EEAC-4844-940E-2AA6D8716068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A20D6C-EEAC-4844-940E-2AA6D8716068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B59DDF-3727-49B4-8748-1E2A6E5ADCA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B59DDF-3727-49B4-8748-1E2A6E5ADCA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B59DDF-3727-49B4-8748-1E2A6E5ADCA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B59DDF-3727-49B4-8748-1E2A6E5ADCA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
