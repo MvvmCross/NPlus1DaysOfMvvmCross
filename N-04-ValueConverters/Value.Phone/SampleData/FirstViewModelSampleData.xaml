@@ -1,0 +1,5 @@
+<ViewModels:FirstViewModel xmlns:ViewModels="clr-namespace:Value.Core.ViewModels;assembly=Value.Core" xmlns:ViewModels1="clr-namespace:Cirrious.MvvmCross.ViewModels;assembly=Cirrious.MvvmCross" Foo="Nam cras">
+	<ViewModels:FirstViewModel.RequestedBy>
+		<ViewModels1:MvxRequestedBy AdditionalInfo="Duis curabitur" Type="Bookmark"/>
+	</ViewModels:FirstViewModel.RequestedBy>
+</ViewModels:FirstViewModel>
