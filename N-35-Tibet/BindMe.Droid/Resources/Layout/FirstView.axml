@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="10dp"
+      android:text="Title"
+    />
+    <MvxSpinner
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="ItemsSource Titles;SelectedItem Title"
+    />
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="10dp"
+      android:text="First Name"
+    />
+    <EditText
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="Text FirstName"
+    />
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textColor="#ff7f7f"
+      android:textSize="30dp"
+      local:MvxBind="Text 140 - (Len(FirstName) + 1 + Len(LastName))"
+    />
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="10dp"
+      android:text="Last Name"
+    />
+    <EditText
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="Text LastName"
+    />
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textColor="#ffff00"
+      android:textSize="30dp"
+      local:MvxBind="Text FirstName + ' ' + LastName + '(' + Title + ')'"
+    />
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textColor="#00ffff"
+      android:textSize="30dp"
+      local:MvxBind="Text Format('{0} {1} ({2})', FirstName, LastName, Title)"
+    />
+    <CheckBox
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Accept the terms?"
+      local:MvxBind="Checked Accepted" />
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textColor="#ff00ff"
+      android:textSize="30dp"
+      local:MvxBind="Text If(Accepted, Format('{0} {1}', FirstName, LastName), Format('{0} {1}', Title, LastName))"
+    />
+    <Button
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Add"
+      local:MvxBind="Click AddCommand; Enabled (Len(FirstName) &gt; 0) &amp;&amp; (Len(LastName) &gt; 0) &amp;&amp; Accepted" />
+    <MvxListView
+      android:layout_width="fill_parent"
+      android:layout_height="400dp"
+      local:MvxBind="ItemsSource People"
+      local:MvxItemTemplate="@layout/item_person"/>
+    
+
+  </LinearLayout>
+</ScrollView>
