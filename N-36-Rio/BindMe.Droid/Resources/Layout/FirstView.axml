@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="10dp"
+      android:text="Title"
+    />
+    <MvxSpinner
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="ItemsSource Titles;SelectedItem Title"
+    />
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="10dp"
+      android:text="First Name"
+    />
+    <EditText
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="Text FirstName"
+    />
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="10dp"
+      android:text="Last Name"
+    />
+    <EditText
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      local:MvxBind="Text LastName"
+    />
+    <CheckBox
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Accept the terms?"
+      local:MvxBind="Checked Accepted" />
+    <Button
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Add"
+      local:MvxBind="Click Add" />
+    <MvxListView
+      android:layout_width="fill_parent"
+      android:layout_height="400dp"
+      local:MvxBind="ItemsSource People"
+      local:MvxItemTemplate="@layout/item_person"/>
+    
+
+  </LinearLayout>
+</ScrollView>
