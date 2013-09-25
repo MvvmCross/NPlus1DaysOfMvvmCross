@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossLightTouch", "CrossLightTouch\CrossLightTouch.csproj", "{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		Ad-Hoc|iPhoneSimulator = Ad-Hoc|iPhoneSimulator
+		AppStore|iPhone = AppStore|iPhone
+		AppStore|iPhoneSimulator = AppStore|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.Debug|iPhone.Build.0 = Debug|iPhone
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.Release|iPhone.ActiveCfg = Release|iPhone
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.Release|iPhone.Build.0 = Release|iPhone
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{BF706037-CBFE-4B12-BF2A-2F07D7194ED1}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
