@@ -4,12 +4,21 @@ using Cirrious.MvvmCross.Binding.Bindings.Target;
 
 namespace CustomBinding.Touch.Views
 {
-    public class BinaryEditFooTargetBinding : MvxTargetBinding
+    public class BinaryEditFooTargetBinding : MvxConvertingTargetBinding
     {
+        protected BinaryEdit BinaryEdit
+        {
+            get { return (BinaryEdit)Target; }
+        }
+
         public BinaryEditFooTargetBinding(BinaryEdit target)
             : base(target)
         {
-            target.MyCountChanged += TargetOnMyCountChanged;
+        }
+
+        public override void SubscribeToEvents()
+        {
+            BinaryEdit.MyCountChanged += TargetOnMyCountChanged;
         }
 
         private void TargetOnMyCountChanged(object sender, EventArgs eventArgs)
@@ -23,14 +32,10 @@ namespace CustomBinding.Touch.Views
             FireValueChanged(value);
         }
 
-        public override void SetValue(object value)
+        protected override void SetValueImpl(object target, object value)
         {
-            var target = Target as BinaryEdit;
-
-            if (target == null)
-                return;
-
-            target.SetThat((int)value);
+            var binaryEdit = (BinaryEdit)target;
+            binaryEdit.SetThat((int)value);
         }
 
         public override Type TargetType

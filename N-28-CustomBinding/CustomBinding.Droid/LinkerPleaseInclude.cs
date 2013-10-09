@@ -21,6 +21,7 @@ namespace CustomBinding.Droid
         public void Include(TextView text)
         {
             text.TextChanged += (sender, args) => text.Text = "" + text.Text;
+			text.Hint = "" + text.Hint;
         }
 
         public void Include(CompoundButton cb)
