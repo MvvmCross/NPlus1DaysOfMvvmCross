@@ -14,11 +14,11 @@ namespace CustomBinding.Touch.Views
             View = new UIView(){ BackgroundColor = UIColor.White};
             base.ViewDidLoad();
 
-            var binaryEdit = new BinaryEdit(new RectangleF(10, 10, 300, 120));
+            var binaryEdit = new BinaryEdit(new RectangleF(10, 70, 300, 120));
             Add(binaryEdit);
-            var textField = new UITextField(new RectangleF(10, 130, 300, 40));
+            var textField = new UITextField(new RectangleF(10, 190, 300, 40));
             Add(textField);
-            var nicerBinaryEdit = new NicerBinaryEdit(new RectangleF(10, 170, 300, 120));
+            var nicerBinaryEdit = new NicerBinaryEdit(new RectangleF(10, 260, 300, 120));
             Add(nicerBinaryEdit);
 
             var set = this.CreateBindingSet<FirstView, Core.ViewModels.FirstViewModel>();

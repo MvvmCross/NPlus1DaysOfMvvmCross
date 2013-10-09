@@ -28,7 +28,7 @@ namespace CustomBinding.Touch
         protected override void FillTargetFactories(Cirrious.MvvmCross.Binding.Bindings.Target.Construction.IMvxTargetBindingFactoryRegistry registry)
         {
             registry.RegisterCustomBindingFactory<BinaryEdit>(
-                            "N28Doofus",
+                            "N28",
                             binary => new BinaryEditFooTargetBinding(binary));
             base.FillTargetFactories(registry);
         }
