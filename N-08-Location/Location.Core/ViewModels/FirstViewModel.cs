@@ -7,12 +7,12 @@ namespace Location.Core.ViewModels
     public class FirstViewModel 
 		: MvxViewModel
     {
-        private readonly IMvxGeoLocationWatcher _watcher;
+        private readonly IMvxLocationWatcher _watcher;
 
-        public FirstViewModel(IMvxGeoLocationWatcher watcher)
+        public FirstViewModel(IMvxLocationWatcher watcher)
         {
             _watcher = watcher;
-            _watcher.Start(new MvxGeoLocationOptions(), OnLocation, OnError);
+            _watcher.Start(new MvxLocationOptions(), OnLocation, OnError);
         }
 
         private void OnLocation(MvxGeoLocation location)
