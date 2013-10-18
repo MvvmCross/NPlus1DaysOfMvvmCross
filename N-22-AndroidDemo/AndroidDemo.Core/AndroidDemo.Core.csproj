@@ -34,10 +34,10 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Cirrious.MvvmCross">
-      <HintPath>..\..\MvvmCross-Binaries\VS2012\bin\Release\Mvx\Portable\Cirrious.MvvmCross.dll</HintPath>
+      <HintPath>..\..\..\MvvmCross-Binaries\VS2012\bin\Release\Mvx\Portable\Cirrious.MvvmCross.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.CrossCore">
-      <HintPath>..\..\MvvmCross-Binaries\VS2012\bin\Release\Mvx\Portable\Cirrious.CrossCore.dll</HintPath>
+      <HintPath>..\..\..\MvvmCross-Binaries\VS2012\bin\Release\Mvx\Portable\Cirrious.CrossCore.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
