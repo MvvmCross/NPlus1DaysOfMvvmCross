@@ -1,4 +1,5 @@
 using System;
+using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Dialog.Touch;
 using CrossUI.Touch.Dialog.Elements;
 using MonoTouch.Foundation;
