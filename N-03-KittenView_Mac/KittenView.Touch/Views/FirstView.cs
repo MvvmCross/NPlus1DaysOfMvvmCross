@@ -5,6 +5,7 @@ using Cirrious.MvvmCross.Binding.Touch.Views;
 using Cirrious.MvvmCross.Touch.Views;
 using KittenView.Core.ViewModels;
 using MonoTouch.CoreFoundation;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 
@@ -16,6 +17,10 @@ namespace KittenView.Touch.Views
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
 			var source = new MvxSimpleTableViewSource(TableView, KittenCell.Key, KittenCell.Key);
 			TableView.RowHeight = 100;
