@@ -3,6 +3,8 @@ using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Dialog.Touch;
 using CrossUI.Touch.Dialog.Elements;
 using MonoTouch.Foundation;
+using MonoTouch.ObjCRuntime;
+using MonoTouch.UIKit;
 
 namespace N_23_Dlg.Touch.Views
 {
@@ -12,6 +14,10 @@ namespace N_23_Dlg.Touch.Views
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             Root = new RootElement("The Dialog")
                 {
