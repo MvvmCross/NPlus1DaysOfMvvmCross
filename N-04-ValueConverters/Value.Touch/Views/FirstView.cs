@@ -3,6 +3,7 @@ using System.Drawing;
 using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Touch.Views;
 using MonoTouch.CoreFoundation;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 using Value.Core.ViewModels;
@@ -37,6 +38,10 @@ namespace Value.Touch.Views
             View = new UniversalView();
 
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             var textField = new UITextField(new RectangleF(10, 10, 300, 40));
             Add(textField);
