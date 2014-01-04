@@ -5,6 +5,7 @@ using Cirrious.MvvmCross.Binding.Touch.Views;
 using Cirrious.MvvmCross.Touch.Views;
 using CollectABull.Core.ViewModels;
 using MonoTouch.CoreFoundation;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 
@@ -16,6 +17,10 @@ namespace CollectABull.Touch.Views
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             var source = new MvxStandardTableViewSource(TableView, "TitleText Caption;ImageUrl ImagePath");
             TableView.Source = source;

@@ -5,6 +5,7 @@ using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Binding.Touch.Views;
 using CollectABull.Core.ViewModels;
 using MonoTouch.Foundation;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using Cirrious.MvvmCross.Touch.Views;
 
@@ -21,6 +22,10 @@ namespace CollectABull.Touch
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             _imageViewLoader = new MvxImageViewLoader(() => this.LatestImageView);
 			
