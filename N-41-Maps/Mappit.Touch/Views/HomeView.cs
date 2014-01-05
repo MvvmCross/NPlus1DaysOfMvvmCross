@@ -8,6 +8,7 @@ using Cirrious.MvvmCross.ViewModels;
 using Mappit.Core.ViewModels;
 using MonoTouch.CoreLocation;
 using MonoTouch.MapKit;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 
@@ -21,6 +22,10 @@ namespace Mappit.Touch.Views
             View.BackgroundColor = UIColor.White;
 
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             var one = new UIButton(UIButtonType.RoundedRect);
             one.Frame = new RectangleF(10, 10, 300, 40);
