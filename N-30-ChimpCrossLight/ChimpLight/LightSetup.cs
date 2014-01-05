@@ -26,7 +26,7 @@ namespace ChimpLight
 
             ApplicationContext = context;
 
-            MvxSimpleIoCContainer.Initialise();
+            MvxSimpleIoCContainer.Initialize();
 
             Mvx.RegisterSingleton<IMvxAndroidGlobals>(this);
 
