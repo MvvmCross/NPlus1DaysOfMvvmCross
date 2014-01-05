@@ -2,6 +2,7 @@ using System.Drawing;
 using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Touch.Views;
 using Cirrious.MvvmCross.ViewModels;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 using Tabbed.Core.ViewModels;
@@ -23,6 +24,10 @@ namespace Tabbed.Touch.Views
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             if (ViewModel == null)
                 return;
