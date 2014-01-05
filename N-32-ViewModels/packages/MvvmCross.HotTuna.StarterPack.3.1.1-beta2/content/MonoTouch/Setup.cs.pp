@@ -3,7 +3,7 @@ using Cirrious.CrossCore.Platform;
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.Touch.Platform;
 
-namespace Compo.Touch
+namespace $rootnamespace$
 {
 	public class Setup : MvxTouchSetup
 	{

@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Specialized;
 using System.Windows.Input;
 using MonoTouch.UIKit;
 
-namespace Compo.Touch
+namespace $rootnamespace$
 {
 	// This class is never actually executed, but when Xamarin linking is enabled it does how to ensure types and properties
 	// are preserved in the deployed app
