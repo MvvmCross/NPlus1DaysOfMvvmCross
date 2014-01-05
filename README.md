@@ -21,7 +21,6 @@ Unfortunately, `PCL Profile 104` (which was used in the first 43 videos) is NOT 
 
 If you are following along and coding with the first 43 videos in 2014+, you are likely installing MvvmCross version 3.1.n or later from NuGet.  This means that you should create your PCLs in a slightly different way to make sure they result in `PCL Profile 158` instead of the profile 104 ones that you seen in the first 43 videos.
  
-To create a new PCL that results in the supported `Profile 158`, you now select the "`.NET Framework 4.5`, `Silverlight 5`, `Windows Phone 8`, `.NET for Windows Store apps`, `Xamarin.Android`, and `Xamarin.iOS` options when you create your PCL.  These selections result in what as known by Microsoft as "`PCL Profile 158`".
+To create a new PCL that results in the supported `Profile 158`, you now select the "`.NET Framework 4.5`, `Silverlight 5`, `Windows Phone 8`, `.NET for Windows Store apps`, `Xamarin.Android`, and `Xamarin.iOS` options when you create your PCL.  These selections result in what is known by Microsoft as "`PCL Profile 158`".
 
 Enjoy the new seamless cross-platform code-sharing experience!
-
