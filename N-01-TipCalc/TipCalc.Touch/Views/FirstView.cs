@@ -3,6 +3,7 @@ using System.Drawing;
 using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Touch.Views;
 using MonoTouch.CoreFoundation;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 using TipCalc.Core.ViewModels;
@@ -37,6 +38,10 @@ namespace TipCalc.Touch.Views
             View = new UniversalView();
 
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             // Perform any additional setup after loading the view
             var label = new UILabel(new RectangleF(10, 0, 300, 40));

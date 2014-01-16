@@ -1,35 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
-<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{20727acb-8d45-4aff-84f9-8d38ca0531dc}" Title="Tabbed.Phone" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="Tabbed.Phone author" Description="Sample description" Publisher="Tabbed.Phone">
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <App xmlns="" ProductID="{9cac3dc2-b65d-4a85-8d03-d16a3b7c1725}" Title="Tabbed.Phone" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Tabbed.Phone author" Description="Sample description" Publisher="Tabbed.Phone" PublisherID="{92e8916d-5f53-424e-97c4-347fc1cf42fe}">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
-      <Capability Name="ID_CAP_GAMERSERVICES"/>
-      <Capability Name="ID_CAP_IDENTITY_DEVICE"/>
-      <Capability Name="ID_CAP_IDENTITY_USER"/>
-      <Capability Name="ID_CAP_LOCATION"/>
-      <Capability Name="ID_CAP_MEDIALIB"/>
-      <Capability Name="ID_CAP_MICROPHONE"/>
-      <Capability Name="ID_CAP_NETWORKING"/>
-      <Capability Name="ID_CAP_PHONEDIALER"/>
-      <Capability Name="ID_CAP_PUSH_NOTIFICATION"/>
-      <Capability Name="ID_CAP_SENSORS"/>
-      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>
-      <Capability Name="ID_CAP_ISV_CAMERA"/>
-      <Capability Name="ID_CAP_CONTACTS"/>
-      <Capability Name="ID_CAP_APPOINTMENTS"/>
+      <Capability Name="ID_CAP_GAMERSERVICES" />
+      <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_LOCATION" />
+      <Capability Name="ID_CAP_MICROPHONE" />
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+      <Capability Name="ID_CAP_PUSH_NOTIFICATION" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_ISV_CAMERA" />
+      <Capability Name="ID_CAP_CONTACTS" />
+      <Capability Name="ID_CAP_APPOINTMENTS" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
     </Capabilities>
     <Tasks>
-      <DefaultTask  Name ="_default" NavigationPage="MainPage.xaml"/>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="Tabbed.PhoneToken" TaskName="_default">
-        <TemplateType5>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
+        <TemplateFlip>
+          <SmallImageURI IsResource="false" IsRelative="true">Background.png</SmallImageURI>
           <Count>0</Count>
+          <BackgroundImageURI IsResource="false" IsRelative="true">Background.png</BackgroundImageURI>
           <Title>Tabbed.Phone</Title>
-        </TemplateType5>
+          <BackContent></BackContent>
+          <BackBackgroundImageURI></BackBackgroundImageURI>
+          <BackTitle></BackTitle>
+          <DeviceLockImageURI></DeviceLockImageURI>
+          <HasLarge>false</HasLarge>
+        </TemplateFlip>
       </PrimaryToken>
     </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
   </App>
 </Deployment>

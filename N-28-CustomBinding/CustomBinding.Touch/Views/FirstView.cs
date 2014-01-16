@@ -1,6 +1,7 @@
 using System.Drawing;
 using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Touch.Views;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 
@@ -13,6 +14,10 @@ namespace CustomBinding.Touch.Views
         {
             View = new UIView(){ BackgroundColor = UIColor.White};
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             var binaryEdit = new BinaryEdit(new RectangleF(10, 70, 300, 120));
             Add(binaryEdit);

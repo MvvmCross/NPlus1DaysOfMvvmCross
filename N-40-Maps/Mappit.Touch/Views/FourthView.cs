@@ -4,6 +4,7 @@ using Cirrious.MvvmCross.Touch.Views;
 using Mappit.Core.ViewModels;
 using MonoTouch.CoreLocation;
 using MonoTouch.MapKit;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 
@@ -20,6 +21,10 @@ namespace Mappit.Touch.Views
             View = mapView;
 
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             var firstViewModel = (FourthViewModel)ViewModel;
             _regionManager = new RegionManager(mapView);

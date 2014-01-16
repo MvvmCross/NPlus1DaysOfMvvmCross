@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Specialized;
+using System.Windows.Input;
 using MonoTouch.UIKit;
 
 namespace Splitter.Touch
@@ -39,7 +40,7 @@ namespace Splitter.Touch
 
         public void Include(UIImageView imageView)
         {
-            imageView.Image = new UIImage(imageView.Image);
+            imageView.Image = new UIImage(imageView.Image.CGImage);
         }
 
         public void Include(UIDatePicker date)
@@ -64,5 +65,10 @@ namespace Splitter.Touch
         {
             changed.CollectionChanged += (s,e) => { var test = string.Format("{0}{1}{2}{3}{4}", e.Action,e.NewItems, e.NewStartingIndex, e.OldItems, e.OldStartingIndex); } ;
         }
-    }
+		
+        public void Include(ICommand command)
+        {
+           command.CanExecuteChanged += (s, e) => { if (command.CanExecute(null)) command.Execute(null); };
+        }
+	}
 }

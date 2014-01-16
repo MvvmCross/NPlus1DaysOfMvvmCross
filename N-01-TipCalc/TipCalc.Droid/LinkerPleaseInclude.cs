@@ -1,5 +1,6 @@
 using System.Collections.Specialized;
 using System.Windows.Input;
+using Android.Views;
 using Android.Widget;
 
 namespace TipCalc.Droid
@@ -16,6 +17,11 @@ namespace TipCalc.Droid
         public void Include(CheckBox checkBox)
         {
             checkBox.CheckedChange += (sender, args) => checkBox.Checked = !checkBox.Checked;
+        }
+
+        public void Include(View view)
+        {
+            view.Click += (s, e) => view.ContentDescription = view.ContentDescription + "";
         }
 
         public void Include(TextView text)

@@ -5,6 +5,7 @@ using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Binding.Touch.Views;
 using Cirrious.MvvmCross.Touch.Views;
 using Compo.Core.ViewModels;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 
@@ -78,6 +79,10 @@ namespace Compo.Touch.Views
         {
             View = new UIView(){ BackgroundColor = UIColor.White};
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             var table = new UITableView(new RectangleF(0, 0, 320, 720));
             Add(table);

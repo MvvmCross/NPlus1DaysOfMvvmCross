@@ -74,6 +74,8 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DebugTrace.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Setup.cs" />
@@ -96,25 +98,25 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.4\lib\MonoTouch40\Cirrious.CrossCore.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1-beta2\lib\MonoTouch\Cirrious.CrossCore.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.CrossCore.Touch">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.4\lib\MonoTouch40\Cirrious.CrossCore.Touch.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1-beta2\lib\MonoTouch\Cirrious.CrossCore.Touch.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross">
-      <HintPath>..\packages\MvvmCross.HotTuna.StarterPack.3.0.4\lib\MonoTouch40\Cirrious.MvvmCross.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Binding">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.4\lib\MonoTouch40\Cirrious.MvvmCross.Binding.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Binding.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Binding.Touch">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.4\lib\MonoTouch40\Cirrious.MvvmCross.Binding.Touch.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Binding.Touch.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.4\lib\MonoTouch40\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Touch">
-      <HintPath>..\packages\MvvmCross.HotTuna.StarterPack.3.0.4\lib\MonoTouch40\Cirrious.MvvmCross.Touch.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Touch.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
@@ -122,6 +124,7 @@
     <Reference Include="monotouch" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppDelegate.cs.txt" />
     <Content Include="ToDo-MvvmCross\AppDelegate.cs.txt" />
     <Content Include="ToDo-MvvmCross\_ Touch UI.txt" />
   </ItemGroup>

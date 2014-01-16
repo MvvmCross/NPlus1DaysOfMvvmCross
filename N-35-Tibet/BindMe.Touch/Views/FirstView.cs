@@ -2,6 +2,7 @@ using System.Drawing;
 using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Binding.Touch.Views;
 using Cirrious.MvvmCross.Touch.Views;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 
@@ -14,6 +15,10 @@ namespace BindMe.Touch.Views
         {
             View = new UIView(){ BackgroundColor = UIColor.White};
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             var textFieldTitle = new UITextField(new RectangleF(10, 10, 300, 30));
             Add(textFieldTitle);

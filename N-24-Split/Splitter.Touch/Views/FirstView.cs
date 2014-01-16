@@ -1,6 +1,7 @@
 using System.Drawing;
 using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Touch.Views;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 
@@ -13,6 +14,10 @@ namespace Splitter.Touch.Views
         {
             View = new UIView(){ BackgroundColor = UIColor.White};
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             var b1 = new UIButton(UIButtonType.RoundedRect);
             b1.Frame = new RectangleF(10, 10, 300, 40);
@@ -37,6 +42,11 @@ namespace Splitter.Touch.Views
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
+
             View.BackgroundColor = UIColor.Red;
         }
     }
@@ -47,6 +57,11 @@ namespace Splitter.Touch.Views
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
+
             View.BackgroundColor = UIColor.Blue;
         }
     }

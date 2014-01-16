@@ -5,6 +5,7 @@ using Cirrious.MvvmCross.Binding.Touch.Views;
 using Cirrious.MvvmCross.Touch.Views;
 using KittenView.Core.ViewModels;
 using MonoTouch.CoreFoundation;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 
@@ -32,6 +33,10 @@ namespace KittenView.Touch.Views
 				return;
 
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
 			CollectionView.RegisterNibForCell(KittenCollectionCell.Nib, KittenCollectionCell.Key);
 			var source = new MvxCollectionViewSource(CollectionView, KittenCollectionCell.Key);

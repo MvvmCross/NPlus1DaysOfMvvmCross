@@ -4,6 +4,7 @@ using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Touch.Views;
 using FirstDemo.Core.ViewModels;
 using MonoTouch.CoreFoundation;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 
@@ -41,6 +42,10 @@ namespace FirstDemo.Touch.Views
             View = new UniversalView();
 
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             var textEditFirst = new UITextField(new RectangleF(0, 0, 320, 40));
             Add(textEditFirst);

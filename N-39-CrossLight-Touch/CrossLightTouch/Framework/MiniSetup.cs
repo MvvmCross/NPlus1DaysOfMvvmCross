@@ -16,7 +16,7 @@ namespace CrossLightTouch.Framework
             if (MvxSimpleIoCContainer.Instance != null)
                 return;
 
-            var ioc = MvxSimpleIoCContainer.Initialise();
+            var ioc = MvxSimpleIoCContainer.Initialize();
 
             var builder = new MvxTouchBindingBuilder();
             builder.DoRegistration();

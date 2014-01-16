@@ -3,6 +3,7 @@ using Cirrious.MvvmCross.Binding.BindingContext;
 using Cirrious.MvvmCross.Binding.Touch.Views;
 using Cirrious.MvvmCross.Touch.Views;
 using CustomControls.Touch.Controls;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
 
@@ -15,6 +16,10 @@ namespace CustomControls.Touch.Views
         {
             View = new UIView(){ BackgroundColor = UIColor.White};
             base.ViewDidLoad();
+
+            // ios7 layout
+            if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
+                EdgesForExtendedLayout = UIRectEdge.None;
 
             var label = new ShapeLabel(new RectangleF(10, 10, 300, 40));
             Add(label);

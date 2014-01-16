@@ -10,7 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>CollectABull.Touch</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>CollectABull.Touch</AssemblyName>
+    <AssemblyName>CollectABullTouch</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -80,14 +80,14 @@
     <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
     <Compile Include="Bootstrap\PictureChooserPluginBootstrap.cs" />
     <Compile Include="Bootstrap\SqlitePluginBootstrap.cs" />
+    <Compile Include="DebugTrace.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Setup.cs" />
-    <Compile Include="Views\FirstView.cs" />
     <Compile Include="Views\ListView.cs" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="packages.config" />
     <Compile Include="Views\HomeView.cs" />
     <Compile Include="Views\HomeView.designer.cs">
       <DependentUpon>HomeView.cs</DependentUpon>
@@ -100,6 +100,7 @@
     <Compile Include="Views\DetailView.designer.cs">
       <DependentUpon>DetailView.cs</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default.png" />
@@ -114,81 +115,72 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.6\lib\MonoTouch40\Cirrious.CrossCore.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1-beta2\lib\MonoTouch\Cirrious.CrossCore.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.CrossCore.Touch">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.6\lib\MonoTouch40\Cirrious.CrossCore.Touch.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1-beta2\lib\MonoTouch\Cirrious.CrossCore.Touch.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross">
-      <HintPath>..\packages\MvvmCross.HotTuna.StarterPack.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Binding">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Binding.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Binding.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Binding.Touch">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Binding.Touch.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Binding.Touch.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.DownloadCache">
-      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.DownloadCache.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Plugins.DownloadCache.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.DownloadCache.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Plugins.DownloadCache.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.DownloadCache.Touch">
-      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.DownloadCache.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Plugins.DownloadCache.Touch.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.DownloadCache.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Plugins.DownloadCache.Touch.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.File">
-      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.File.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Plugins.File.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.File.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Plugins.File.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.File.Touch">
-      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.File.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Plugins.File.Touch.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.File.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Plugins.File.Touch.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.Location">
-      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Location.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Plugins.Location.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Location.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Location.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.Location.Touch">
-      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Location.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Plugins.Location.Touch.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Location.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Location.Touch.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.Messenger">
-      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Messenger.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Plugins.Messenger.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Messenger.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Messenger.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.PictureChooser">
-      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.PictureChooser.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Plugins.PictureChooser.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.PictureChooser.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Plugins.PictureChooser.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.PictureChooser.Touch">
-      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.PictureChooser.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Plugins.PictureChooser.Touch.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.PictureChooser.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Plugins.PictureChooser.Touch.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.Sqlite">
-      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Sqlite.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Plugins.Sqlite.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Sqlite.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.Sqlite.Touch">
-      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Sqlite.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Plugins.Sqlite.Touch.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Sqlite.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Sqlite.Touch.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Touch">
-      <HintPath>..\packages\MvvmCross.HotTuna.StarterPack.3.0.6\lib\MonoTouch40\Cirrious.MvvmCross.Touch.dll</HintPath>
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.1-beta2\lib\MonoTouch\Cirrious.MvvmCross.Touch.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Windows">
-      <HintPath>..\packages\MvvmCross.PortableSupport.3.0.6\lib\MonoTouch40\System.Windows.dll</HintPath>
-    </Reference>
+    <Reference Include="System.Windows" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
-    <Reference Include="System.Xml.Serialization">
-      <HintPath>..\packages\MvvmCross.PortableSupport.3.0.6\lib\MonoTouch40\System.Xml.Serialization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net">
-      <HintPath>..\packages\MvvmCross.PortableSupport.3.0.6\lib\MonoTouch40\System.Net.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="AppDelegate.cs.txt" />
-    <Content Include="ToDo-MvvmCross\_ Touch UI.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ItemGroup>
     <InterfaceDefinition Include="Views\HomeView.xib" />
     <InterfaceDefinition Include="Views\AddView.xib" />
     <InterfaceDefinition Include="Views\DetailView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ToDo-MvvmCross\_ Touch UI.txt" />
   </ItemGroup>
 </Project>

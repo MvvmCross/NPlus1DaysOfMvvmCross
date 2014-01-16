@@ -1,8 +1,7 @@
-using MonoTouch.Foundation;
 using MonoTouch.UIKit;
-using Cirrious.MvvmCross.Touch.Platform;
-using Cirrious.MvvmCross.Touch.Views.Presenters;
+using Cirrious.CrossCore.Platform;
 using Cirrious.MvvmCross.ViewModels;
+using Cirrious.MvvmCross.Touch.Platform;
 
 namespace CustomControls.Touch
 {
@@ -13,9 +12,14 @@ namespace CustomControls.Touch
 		{
 		}
 
-		protected override Cirrious.MvvmCross.ViewModels.IMvxApplication CreateApp ()
+		protected override IMvxApplication CreateApp ()
 		{
 			return new Core.App();
 		}
+		
+        protected override IMvxTrace CreateDebugTrace()
+        {
+            return new DebugTrace();
+        }
 	}
 }
