@@ -31,71 +31,65 @@ namespace Mappit.Droid
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010010
-			public const int MvxBind = 2130771984;
-			
-			// aapt resource value: 0x7f010014
-			public const int MvxDropDownItemTemplate = 2130771988;
-			
-			// aapt resource value: 0x7f010013
-			public const int MvxItemTemplate = 2130771987;
-			
-			// aapt resource value: 0x7f010011
-			public const int MvxLang = 2130771985;
-			
-			// aapt resource value: 0x7f010015
-			public const int MvxSource = 2130771989;
+			// aapt resource value: 0x7f01000e
+			public const int MvxBind = 2130771982;
 			
 			// aapt resource value: 0x7f010012
-			public const int MvxTemplate = 2130771986;
+			public const int MvxDropDownItemTemplate = 2130771986;
 			
-			// aapt resource value: 0x7f010000
-			public const int adSize = 2130771968;
-			
-			// aapt resource value: 0x7f010001
-			public const int adUnitId = 2130771969;
-			
-			// aapt resource value: 0x7f010003
-			public const int cameraBearing = 2130771971;
-			
-			// aapt resource value: 0x7f010004
-			public const int cameraTargetLat = 2130771972;
-			
-			// aapt resource value: 0x7f010005
-			public const int cameraTargetLng = 2130771973;
-			
-			// aapt resource value: 0x7f010006
-			public const int cameraTilt = 2130771974;
-			
-			// aapt resource value: 0x7f010007
-			public const int cameraZoom = 2130771975;
-			
-			// aapt resource value: 0x7f010002
-			public const int mapType = 2130771970;
-			
-			// aapt resource value: 0x7f010008
-			public const int uiCompass = 2130771976;
-			
-			// aapt resource value: 0x7f010009
-			public const int uiRotateGestures = 2130771977;
-			
-			// aapt resource value: 0x7f01000a
-			public const int uiScrollGestures = 2130771978;
-			
-			// aapt resource value: 0x7f01000b
-			public const int uiTiltGestures = 2130771979;
-			
-			// aapt resource value: 0x7f01000c
-			public const int uiZoomControls = 2130771980;
-			
-			// aapt resource value: 0x7f01000d
-			public const int uiZoomGestures = 2130771981;
-			
-			// aapt resource value: 0x7f01000e
-			public const int useViewLifecycle = 2130771982;
+			// aapt resource value: 0x7f010011
+			public const int MvxItemTemplate = 2130771985;
 			
 			// aapt resource value: 0x7f01000f
-			public const int zOrderOnTop = 2130771983;
+			public const int MvxLang = 2130771983;
+			
+			// aapt resource value: 0x7f010013
+			public const int MvxSource = 2130771987;
+			
+			// aapt resource value: 0x7f010010
+			public const int MvxTemplate = 2130771984;
+			
+			// aapt resource value: 0x7f010001
+			public const int cameraBearing = 2130771969;
+			
+			// aapt resource value: 0x7f010002
+			public const int cameraTargetLat = 2130771970;
+			
+			// aapt resource value: 0x7f010003
+			public const int cameraTargetLng = 2130771971;
+			
+			// aapt resource value: 0x7f010004
+			public const int cameraTilt = 2130771972;
+			
+			// aapt resource value: 0x7f010005
+			public const int cameraZoom = 2130771973;
+			
+			// aapt resource value: 0x7f010000
+			public const int mapType = 2130771968;
+			
+			// aapt resource value: 0x7f010006
+			public const int uiCompass = 2130771974;
+			
+			// aapt resource value: 0x7f010007
+			public const int uiRotateGestures = 2130771975;
+			
+			// aapt resource value: 0x7f010008
+			public const int uiScrollGestures = 2130771976;
+			
+			// aapt resource value: 0x7f010009
+			public const int uiTiltGestures = 2130771977;
+			
+			// aapt resource value: 0x7f01000a
+			public const int uiZoomControls = 2130771978;
+			
+			// aapt resource value: 0x7f01000b
+			public const int uiZoomGestures = 2130771979;
+			
+			// aapt resource value: 0x7f01000c
+			public const int useViewLifecycle = 2130771980;
+			
+			// aapt resource value: 0x7f01000d
+			public const int zOrderOnTop = 2130771981;
 			
 			static Attribute()
 			{
@@ -247,10 +241,7 @@ namespace Mappit.Droid
 			public const int Icon = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int monoandroidsplash = 2130837533;
-			
-			// aapt resource value: 0x7f02001e
-			public const int splash = 2130837534;
+			public const int splash = 2130837533;
 			
 			static Drawable()
 			{
@@ -299,22 +290,6 @@ namespace Mappit.Droid
 			}
 		}
 		
-		public partial class Integer
-		{
-			
-			// aapt resource value: 0x7f070000
-			public const int google_play_services_version = 2131165184;
-			
-			static Integer()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Integer()
-			{
-			}
-		}
-		
 		public partial class Layout
 		{
 			
@@ -346,29 +321,29 @@ namespace Mappit.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f06001b
-			public const int ApplicationName = 2131099675;
-			
 			// aapt resource value: 0x7f06001a
-			public const int Hello = 2131099674;
-			
-			// aapt resource value: 0x7f060015
-			public const int auth_client_needs_enabling_title = 2131099669;
-			
-			// aapt resource value: 0x7f060016
-			public const int auth_client_needs_installation_title = 2131099670;
-			
-			// aapt resource value: 0x7f060017
-			public const int auth_client_needs_update_title = 2131099671;
-			
-			// aapt resource value: 0x7f060018
-			public const int auth_client_play_services_err_notification_msg = 2131099672;
+			public const int ApplicationName = 2131099674;
 			
 			// aapt resource value: 0x7f060019
-			public const int auth_client_requested_by_msg = 2131099673;
+			public const int Hello = 2131099673;
 			
 			// aapt resource value: 0x7f060014
-			public const int auth_client_using_bad_version_title = 2131099668;
+			public const int auth_client_needs_enabling_title = 2131099668;
+			
+			// aapt resource value: 0x7f060015
+			public const int auth_client_needs_installation_title = 2131099669;
+			
+			// aapt resource value: 0x7f060016
+			public const int auth_client_needs_update_title = 2131099670;
+			
+			// aapt resource value: 0x7f060017
+			public const int auth_client_play_services_err_notification_msg = 2131099671;
+			
+			// aapt resource value: 0x7f060018
+			public const int auth_client_requested_by_msg = 2131099672;
+			
+			// aapt resource value: 0x7f060013
+			public const int auth_client_using_bad_version_title = 2131099667;
 			
 			// aapt resource value: 0x7f060006
 			public const int common_google_play_services_enable_button = 2131099654;
@@ -406,17 +381,14 @@ namespace Mappit.Droid
 			// aapt resource value: 0x7f06000d
 			public const int common_google_play_services_unknown_issue = 2131099661;
 			
-			// aapt resource value: 0x7f060010
-			public const int common_google_play_services_unsupported_date_text = 2131099664;
-			
 			// aapt resource value: 0x7f06000f
 			public const int common_google_play_services_unsupported_text = 2131099663;
 			
 			// aapt resource value: 0x7f06000e
 			public const int common_google_play_services_unsupported_title = 2131099662;
 			
-			// aapt resource value: 0x7f060011
-			public const int common_google_play_services_update_button = 2131099665;
+			// aapt resource value: 0x7f060010
+			public const int common_google_play_services_update_button = 2131099664;
 			
 			// aapt resource value: 0x7f060008
 			public const int common_google_play_services_update_text = 2131099656;
@@ -424,11 +396,11 @@ namespace Mappit.Droid
 			// aapt resource value: 0x7f060007
 			public const int common_google_play_services_update_title = 2131099655;
 			
-			// aapt resource value: 0x7f060012
-			public const int common_signin_button_text = 2131099666;
+			// aapt resource value: 0x7f060011
+			public const int common_signin_button_text = 2131099665;
 			
-			// aapt resource value: 0x7f060013
-			public const int common_signin_button_text_long = 2131099667;
+			// aapt resource value: 0x7f060012
+			public const int common_signin_button_text_long = 2131099666;
 			
 			static String()
 			{
@@ -443,11 +415,8 @@ namespace Mappit.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f080001
-			public const int Mono_Android_Theme_Splash = 2131230721;
-			
-			// aapt resource value: 0x7f080000
-			public const int Theme_Splash = 2131230720;
+			// aapt resource value: 0x7f070000
+			public const int Theme_Splash = 2131165184;
 			
 			static Style()
 			{
@@ -462,17 +431,9 @@ namespace Mappit.Droid
 		public partial class Styleable
 		{
 			
-			public static int[] AdsAttrs = new int[] {
-					2130771968,
-					2130771969};
-			
-			// aapt resource value: 0
-			public const int AdsAttrs_adSize = 0;
-			
-			// aapt resource value: 1
-			public const int AdsAttrs_adUnitId = 1;
-			
 			public static int[] MapAttrs = new int[] {
+					2130771968,
+					2130771969,
 					2130771970,
 					2130771971,
 					2130771972,
@@ -484,9 +445,7 @@ namespace Mappit.Droid
 					2130771978,
 					2130771979,
 					2130771980,
-					2130771981,
-					2130771982,
-					2130771983};
+					2130771981};
 			
 			// aapt resource value: 1
 			public const int MapAttrs_cameraBearing = 1;
@@ -531,8 +490,8 @@ namespace Mappit.Droid
 			public const int MapAttrs_zOrderOnTop = 13;
 			
 			public static int[] MvxBinding = new int[] {
-					2130771984,
-					2130771985};
+					2130771982,
+					2130771983};
 			
 			// aapt resource value: 0
 			public const int MvxBinding_MvxBind = 0;
@@ -541,20 +500,20 @@ namespace Mappit.Droid
 			public const int MvxBinding_MvxLang = 1;
 			
 			public static int[] MvxControl = new int[] {
-					2130771986};
+					2130771984};
 			
 			// aapt resource value: 0
 			public const int MvxControl_MvxTemplate = 0;
 			
 			public static int[] MvxImageView = new int[] {
-					2130771989};
+					2130771987};
 			
 			// aapt resource value: 0
 			public const int MvxImageView_MvxSource = 0;
 			
 			public static int[] MvxListView = new int[] {
-					2130771987,
-					2130771988};
+					2130771985,
+					2130771986};
 			
 			// aapt resource value: 1
 			public const int MvxListView_MvxDropDownItemTemplate = 1;

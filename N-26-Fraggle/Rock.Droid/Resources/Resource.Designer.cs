@@ -66,10 +66,7 @@ namespace Rock.Droid
 			public const int Icon = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int monoandroidsplash = 2130837505;
-			
-			// aapt resource value: 0x7f020002
-			public const int splash = 2130837506;
+			public const int splash = 2130837505;
 			
 			static Drawable()
 			{
@@ -176,9 +173,6 @@ namespace Rock.Droid
 		
 		public partial class Style
 		{
-			
-			// aapt resource value: 0x7f050001
-			public const int Mono_Android_Theme_Splash = 2131034113;
 			
 			// aapt resource value: 0x7f050000
 			public const int Theme_Splash = 2131034112;
