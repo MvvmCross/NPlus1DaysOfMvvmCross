@@ -1,10 +1,10 @@
-using System.Drawing;
-using Cirrious.MvvmCross.Binding.BindingContext;
-using Cirrious.MvvmCross.Binding.Touch.Views;
-using Cirrious.MvvmCross.Touch.Views;
-using MonoTouch.ObjCRuntime;
-using MonoTouch.UIKit;
-using MonoTouch.Foundation;
+using CoreGraphics;
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.Binding.iOS.Views;
+using MvvmCross.iOS.Views;
+using ObjCRuntime;
+using UIKit;
+using Foundation;
 
 namespace BindMe.Touch.Views
 {
@@ -20,7 +20,7 @@ namespace BindMe.Touch.Views
             if (RespondsToSelector(new Selector("edgesForExtendedLayout")))
                 EdgesForExtendedLayout = UIRectEdge.None;
 
-            var textFieldTitle = new UITextField(new RectangleF(10, 10, 300, 30));
+            var textFieldTitle = new UITextField(new CGRect(10, 10, 300, 30));
             Add(textFieldTitle);
             var picker = new UIPickerView();
             var pickerViewModel = new MvxPickerViewModel(picker);
@@ -28,23 +28,23 @@ namespace BindMe.Touch.Views
             picker.ShowSelectionIndicator = true; 
             textFieldTitle.InputView = picker;
 
-            var textFieldFirstName = new UITextField(new RectangleF(10, 40, 300, 30));
+            var textFieldFirstName = new UITextField(new CGRect(10, 40, 300, 30));
             Add(textFieldFirstName);
-            var textFieldLastName = new UITextField(new RectangleF(10, 70, 300, 30));
+            var textFieldLastName = new UITextField(new CGRect(10, 70, 300, 30));
             Add(textFieldLastName);
-            var acceptedLabel = new UILabel(new RectangleF(10, 100, 200, 30));
+            var acceptedLabel = new UILabel(new CGRect(10, 100, 200, 30));
             acceptedLabel.Text = "Accepted?";
             Add(acceptedLabel);
-            var accepted = new UISwitch(new RectangleF(210, 100, 100, 30));
+            var accepted = new UISwitch(new CGRect(210, 100, 100, 30));
             Add(accepted);
             var add = new UIButton(UIButtonType.RoundedRect);
             add.SetTitle("Add", UIControlState.Normal);
-            add.Frame = new RectangleF(10,130,300,30);
+            add.Frame = new CGRect(10,130,300,30);
             Add(add);
-            var debugView = new UILabel(new RectangleF(10, 130, 300, 30));
+            var debugView = new UILabel(new CGRect(10, 130, 300, 30));
             Add(debugView);
 
-            var table = new UITableView(new RectangleF(10, 160, 300, 300));
+            var table = new UITableView(new CGRect(10, 160, 300, 300));
             Add(table);
             var source = new MvxStandardTableViewSource(table, "TitleText FirstName");
             table.Source = source;

@@ -1,11 +1,12 @@
-using MonoTouch.UIKit;
-using Cirrious.CrossCore.Platform;
-using Cirrious.MvvmCross.ViewModels;
-using Cirrious.MvvmCross.Touch.Platform;
+using UIKit;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.iOS.Platform;
+using MvvmCross.Platform.Platform;
+using BindMe.Core;
 
 namespace BindMe.Touch
 {
-	public class Setup : MvxTouchSetup
+	public class Setup : MvxIosSetup
 	{
 		public Setup(MvxApplicationDelegate applicationDelegate, UIWindow window)
             : base(applicationDelegate, window)

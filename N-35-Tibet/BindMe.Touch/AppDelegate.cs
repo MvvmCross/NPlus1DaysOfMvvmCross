@@ -1,8 +1,8 @@
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
-using Cirrious.CrossCore;
-using Cirrious.MvvmCross.Touch.Platform;
-using Cirrious.MvvmCross.ViewModels;
+using Foundation;
+using UIKit;
+using MvvmCross.Platform;
+using MvvmCross.iOS.Platform;
+using MvvmCross.Core.ViewModels;
 
 namespace BindMe.Touch
 {
