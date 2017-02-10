@@ -1,12 +1,12 @@
-using Cirrious.CrossCore.Platform;
-using Cirrious.MvvmCross.BindingEx.WindowsShared;
-using Cirrious.MvvmCross.ViewModels;
-using Cirrious.MvvmCross.WindowsStore.Platform;
 using Windows.UI.Xaml.Controls;
+using MvvmCross.BindingEx.WindowsCommon;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform.Platform;
+using MvvmCross.WindowsUWP.Platform;
 
 namespace BindMe.Store
 {
-    public class Setup : MvxStoreSetup
+    public class Setup : MvxWindowsSetup
     {
         public Setup(Frame rootFrame) : base(rootFrame)
         {

@@ -1,9 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
 
   <Identity Name="4e5bfe0c-842a-400e-9b93-963ca3c2fe3c"
             Publisher="CN=Stuart"
             Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="145fd1d7-4809-4537-b997-552184b48b1f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>BindMe.Store</DisplayName>
@@ -11,10 +18,9 @@
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
-  <Prerequisites>
-    <OSMinVersion>6.2.1</OSMinVersion>
-    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
-  </Prerequisites>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
 
   <Resources>
     <Resource Language="x-generate"/>
@@ -24,16 +30,15 @@
     <Application Id="App"
         Executable="$targetnametoken$.exe"
         EntryPoint="BindMe.Store.App">
-        <VisualElements
-            DisplayName="BindMe.Store"
-            Logo="Assets\Logo.png"
-            SmallLogo="Assets\SmallLogo.png"
-            Description="BindMe.Store"
-            ForegroundText="light"
-            BackgroundColor="#464646">
-            <DefaultTile ShowName="allLogos" />
-            <SplashScreen Image="Assets\SplashScreen.png" />
-        </VisualElements>
+      <uap:VisualElements
+        DisplayName="BindMe.Store"
+              Description="BindMe.Store"
+              BackgroundColor="#464646"
+          Square150x150Logo="Assets\Square150x150Logo.png"
+          Square44x44Logo="Assets\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
     </Application>
   </Applications>
   <Capabilities>
