@@ -1,8 +1,8 @@
-using Cirrious.MvvmCross.WindowsStore.Views;
+using MvvmCross.WindowsUWP.Views;
 
 namespace BindMe.Store.Views
 {
-    public sealed partial class FirstView : MvxStorePage
+    public sealed partial class FirstView : MvxWindowsPage
     {
         public FirstView()
         {

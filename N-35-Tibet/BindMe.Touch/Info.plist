@@ -13,7 +13,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>3.2</string>
+	<string>6.0</string>
 	<key>CFBundleDisplayName</key>
 	<string>N-35-Tibet</string>
 	<key>CFBundleIdentifier</key>
@@ -22,5 +22,7 @@
 	<string>1</string>
 	<key>NSMainNibFile</key>
 	<string></string>
+	<key>CFBundleName</key>
+	<string>N-35-Tibet</string>
 </dict>
 </plist>

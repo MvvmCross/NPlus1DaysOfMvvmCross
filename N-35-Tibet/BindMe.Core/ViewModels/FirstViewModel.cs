@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
-using Cirrious.CrossCore.Converters;
-using Cirrious.MvvmCross.ViewModels;
+using MvvmCross.Platform.Converters;
+using MvvmCross.Core.ViewModels;
 
 namespace BindMe.Core.ViewModels
 {
