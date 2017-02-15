@@ -1,10 +1,10 @@
-using Cirrious.MvvmCross.ViewModels;
+using MvvmCross.Core.ViewModels;
 using TipCalc.Core.Services;
 
 namespace TipCalc.Core.ViewModels
 {
     public class FirstViewModel 
-		: MvxViewModel
+        : MvxViewModel
     {
         private readonly ICalculationService _calculationService;
 
@@ -20,30 +20,30 @@ namespace TipCalc.Core.ViewModels
         public double Generosity
         {
             get { return _generosity; }
-            set { _generosity = value; RaisePropertyChanged(() => Generosity); Recalc(); }
+            set { SetProperty(ref _generosity, value); Recalc(); }
         }
-        
+
         private double _subTotal;
         public double SubTotal
         {
             get { return _subTotal; }
-            set { _subTotal = value; RaisePropertyChanged(() => SubTotal); Recalc(); }
+            set { SetProperty(ref _subTotal, value); Recalc(); }
         }
 
         private double _tip;
         public double Tip
         {
             get { return _tip; }
-            set { _tip = value; RaisePropertyChanged(() => Tip); }
+            set { SetProperty(ref _tip, value); }
         }
 
         private double _total;
         public double Total
         {
             get { return _total; }
-            set { _total = value; RaisePropertyChanged(() => Total); }
+            set { SetProperty(ref _total, value); }
         }
-        
+
         private void Recalc()
         {
             Tip = _calculationService.Tip(SubTotal, Generosity);
