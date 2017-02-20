@@ -1,9 +1,9 @@
-using Cirrious.CrossCore.Plugins;
+using MvvmCross.Platform.Plugins;
 
 namespace KittenView.Droid.Bootstrap
 {
     public class FilePluginBootstrap
-        : MvxPluginBootstrapAction<Cirrious.MvvmCross.Plugins.File.PluginLoader>
+        : MvxPluginBootstrapAction<MvvmCross.Plugins.File.PluginLoader>
     {
     }
 }

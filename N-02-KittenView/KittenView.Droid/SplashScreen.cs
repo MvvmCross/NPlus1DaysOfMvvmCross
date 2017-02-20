@@ -1,9 +1,16 @@
 using Android.App;
-using Cirrious.MvvmCross.Droid.Views;
+using Android.Content.PM;
+using MvvmCross.Droid.Views;
 
 namespace KittenView.Droid
 {
-    [Activity(Label = "KittenView", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(
+        Label = "KittenView.Droid"
+        , MainLauncher = true
+        , Icon = "@drawable/icon"
+        , Theme = "@style/Theme.Splash"
+        , NoHistory = true
+        , ScreenOrientation = ScreenOrientation.Portrait)]
     public class SplashScreen : MvxSplashScreenActivity
     {
         public SplashScreen()
