@@ -1,24 +1,24 @@
-using Cirrious.MvvmCross.ViewModels;
+using MvvmCross.Core.ViewModels;
 
 namespace FirstDemo.Core.ViewModels
 {
     public class FirstViewModel 
-		: MvxViewModel
+        : MvxViewModel
     {
         private string _firstName;
         public string FirstName
         {
             get { return _firstName; }
-            set { _firstName = value; RaisePropertyChanged(() => FirstName); RaisePropertyChanged(() => FullName); }
+            set { SetProperty(ref _firstName, value); RaisePropertyChanged(() => FullName); }
         }
 
         private string _lastName;
         public string LastName
         {
             get { return _lastName; }
-            set { _lastName = value; RaisePropertyChanged(() => LastName); RaisePropertyChanged(() => FullName); }
+            set { SetProperty(ref _lastName, value); RaisePropertyChanged(() => FullName); }
         }
-        
+
         public string FullName
         {
             get { return string.Format("{0} {1}", _firstName, _lastName); }
