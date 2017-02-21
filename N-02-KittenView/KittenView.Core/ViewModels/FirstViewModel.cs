@@ -1,11 +1,11 @@
-using System.Collections.Generic;
-using Cirrious.MvvmCross.ViewModels;
 using KittenView.Core.Services;
+using MvvmCross.Core.ViewModels;
+using System.Collections.Generic;
 
 namespace KittenView.Core.ViewModels
 {
-    public class FirstViewModel 
-		: MvxViewModel
+    public class FirstViewModel
+        : MvxViewModel
     {
         public FirstViewModel(IKittenGenesisService service)
         {
@@ -23,7 +23,7 @@ namespace KittenView.Core.ViewModels
         public List<Kitten> Kittens
         {
             get { return _kittens; }
-            set { _kittens = value; RaisePropertyChanged(() => Kittens); }
+            set { SetProperty(ref _kittens, value); }
         }
     }
 }
