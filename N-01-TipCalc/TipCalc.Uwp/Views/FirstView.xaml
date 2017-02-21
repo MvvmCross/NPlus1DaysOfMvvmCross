@@ -1,0 +1,34 @@
+﻿<views:MvxWindowsPage
+    x:Class="TipCalc.Uwp.Views.FirstView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TipCalc.Uwp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="using:MvvmCross.WindowsUWP.Views"
+    mc:Ignorable="d" Height="471.667">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+                <TextBlock Text="SubTotal"></TextBlock>
+                <TextBox Text="{Binding SubTotal, Mode=TwoWay}"></TextBox>
+                <TextBlock Text="How generous?"></TextBlock>
+                <Slider Value="{Binding Generosity, Mode=TwoWay}"
+                        Minimum="0"
+                        Maximum="100"></Slider>
+                <TextBlock Text="Tip:"></TextBlock>
+                <TextBlock Text="{Binding Tip}"></TextBlock>
+                <TextBlock Text="SubTotal:"></TextBlock>
+                <TextBlock Text="{Binding Total}"></TextBlock>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</views:MvxWindowsPage>
